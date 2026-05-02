@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>cumula — knowledge, compounded.</title>
+    <meta
+      name="description"
+      content="cumula tests what you already know, then builds a personal curriculum around the gaps. Modular. Measurable. Yours."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav__inner">
+        <a href="#top" class="nav__brand" aria-label="cumula home">
+          <span class="logo" aria-hidden="true">
+            <span class="logo__dot logo__dot--1"></span>
+            <span class="logo__dot logo__dot--2"></span>
+            <span class="logo__dot logo__dot--3"></span>
+          </span>
+          <span class="nav__wordmark">cumula</span>
+        </a>
+        <nav class="nav__links" aria-label="Primary">
+          <a href="#how">How it works</a>
+          <a href="#learners">For learners</a>
+        </nav>
+        <a href="#waitlist" class="btn btn--primary nav__cta">Join waitlist</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero__inner">
+          <span class="pill">Currently in early access · Join the waitlist</span>
+          <h1 class="hero__headline">Knowledge, compounded.</h1>
+          <p class="hero__subhead">
+            Cumula tests what you already know, then builds a personal
+            curriculum around the gaps. Modular. Measurable. Yours.
+          </p>
+          <form class="capture" action="#" method="post" data-capture="hero">
+            <label class="visually-hidden" for="email-hero">Email address</label>
+            <input
+              id="email-hero"
+              class="capture__input"
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            />
+            <button type="submit" class="btn btn--primary">
+              Get early access
+            </button>
+          </form>
+          <p class="micro">No credit card. We'll email you when we're ready.</p>
+        </div>
+      </section>
+
+      <section class="preview">
+        <div class="container">
+          <div class="window" role="img" aria-label="Preview of the cumula curriculum view">
+            <div class="window__chrome">
+              <span class="window__dot"></span>
+              <span class="window__dot"></span>
+              <span class="window__dot"></span>
+              <span class="window__url">cumula.app/curriculum</span>
+            </div>
+            <div class="window__body">
+              <div class="curriculum">
+                <div class="curriculum__head">
+                  <div>
+                    <p class="curriculum__eyebrow">Your curriculum</p>
+                    <h3 class="curriculum__title">Behavioural economics</h3>
+                  </div>
+                  <div class="curriculum__progress">
+                    <span class="curriculum__pct">34%</span>
+                    <span class="curriculum__bar"><span style="width: 34%"></span></span>
+                  </div>
+                </div>
+                <ul class="modules">
+                  <li class="module module--complete">
+                    <span class="module__index">01</span>
+                    <div class="module__body">
+                      <p class="module__title">Foundations of decision making</p>
+                      <p class="module__meta">Complete · 6 of 6 lessons</p>
+                    </div>
+                    <span class="module__status">✓</span>
+                  </li>
+                  <li class="module module--active">
+                    <span class="module__index">02</span>
+                    <div class="module__body">
+                      <p class="module__title">Heuristics and biases</p>
+                      <p class="module__meta">In progress · 3 of 7 lessons</p>
+                    </div>
+                    <span class="module__status">→</span>
+                  </li>
+                  <li class="module module--locked">
+                    <span class="module__index">03</span>
+                    <div class="module__body">
+                      <p class="module__title">Prospect theory in practice</p>
+                      <p class="module__meta">Locked · unlocks after module 02</p>
+                    </div>
+                    <span class="module__status">·</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how" id="how">
+        <div class="container">
+          <div class="steps">
+            <article class="step">
+              <p class="step__index">01</p>
+              <h2 class="step__title">Tell us what to teach you</h2>
+              <p class="step__body">
+                Anything from Spanish to systems thinking. As broad or narrow as
+                you want.
+              </p>
+            </article>
+            <article class="step">
+              <p class="step__index">02</p>
+              <h2 class="step__title">A short, smart diagnostic</h2>
+              <p class="step__body">
+                Eight to twelve questions calibrate your starting level. No
+                guessing.
+              </p>
+            </article>
+            <article class="step">
+              <p class="step__index">03</p>
+              <h2 class="step__title">Your curriculum, generated</h2>
+              <p class="step__body">
+                Modules, sub-topics, theory and practice in balance. Tested as
+                you go.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="differentiator" id="learners">
+        <div class="container differentiator__inner">
+          <p class="eyebrow">What makes cumula different</p>
+          <p class="differentiator__lead">
+            Most learning apps assume you start at zero. Cumula assumes you
+            already know something — and builds around it.
+          </p>
+          <p class="differentiator__body">
+            Every curriculum is shaped by your real starting point, not a
+            generic outline. The result: less time spent on what you've already
+            mastered, more time spent on what genuinely moves you forward.
+          </p>
+        </div>
+      </section>
+
+      <section class="footer-cta" id="waitlist">
+        <div class="container footer-cta__inner">
+          <h2 class="footer-cta__headline">Be one of the first.</h2>
+          <p class="footer-cta__subhead">
+            Early access opens this summer. Waitlist members get a free first
+            month.
+          </p>
+          <form class="capture" action="#" method="post" data-capture="footer">
+            <label class="visually-hidden" for="email-footer">Email address</label>
+            <input
+              id="email-footer"
+              class="capture__input"
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            />
+            <button type="submit" class="btn btn--primary">
+              Join the waitlist
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="logo" aria-hidden="true">
+          <span class="logo__dot logo__dot--1"></span>
+          <span class="logo__dot logo__dot--2"></span>
+          <span class="logo__dot logo__dot--3"></span>
+        </span>
+        <span class="footer__wordmark">cumula</span>
+        <span class="footer__tagline">Knowledge, compounded.</span>
+      </div>
+    </footer>
+
+    <script>
+      // Lightweight client-side capture stub. Swap action="#" on the forms
+      // for a real endpoint (Formspree, ConvertKit, Mailchimp, your own API)
+      // and remove this handler — or keep it as a fallback success message.
+      document.querySelectorAll('form.capture').forEach((form) => {
+        form.addEventListener('submit', (e) => {
+          if (form.getAttribute('action') === '#') {
+            e.preventDefault();
+            const input = form.querySelector('input[type=email]');
+            const button = form.querySelector('button');
+            if (input && button) {
+              button.textContent = 'Thanks — you’re on the list';
+              button.disabled = true;
+              input.value = '';
+              input.disabled = true;
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
