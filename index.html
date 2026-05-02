@@ -45,29 +45,12 @@
             Cumula tests what you already know, then builds a personal
             curriculum around the gaps. Modular. Measurable. Yours.
           </p>
-          <form class="capture" action="#" method="post" data-capture="hero">
-            <label class="visually-hidden" for="email-hero">Email address</label>
-            <input
-              id="email-hero"
-              class="capture__input"
-              type="email"
-              name="email"
-              placeholder="you@example.com"
-              autocomplete="email"
-              required
-            />
-            <button type="submit" class="btn btn--primary">
-              Get early access
-            </button>
-          </form>
-          <label class="consent" for="consent-hero">
-            <input id="consent-hero" type="checkbox" name="consent" required />
-            <span>
-              I agree to receive waitlist updates from cumula and to the
-              <a href="privacy.html">privacy policy</a>. Unsubscribe any time.
-            </span>
-          </label>
-          <p class="micro">No credit card. We'll email you when we're ready.</p>
+          <div class="eo-form">
+            <script async src="https://eomail5.com/form/2ab09552-462c-11f1-b7c4-cf2f3be645a0.js" data-form="2ab09552-462c-11f1-b7c4-cf2f3be645a0"></script>
+          </div>
+          <p class="micro">
+            By joining, you agree to our <a href="privacy.html">privacy policy</a>. No credit card. Unsubscribe any time.
+          </p>
         </div>
       </section>
 
@@ -177,28 +160,12 @@
             Early access opens this summer. Waitlist members get a free first
             month.
           </p>
-          <form class="capture" action="#" method="post" data-capture="footer">
-            <label class="visually-hidden" for="email-footer">Email address</label>
-            <input
-              id="email-footer"
-              class="capture__input"
-              type="email"
-              name="email"
-              placeholder="you@example.com"
-              autocomplete="email"
-              required
-            />
-            <button type="submit" class="btn btn--primary">
-              Join the waitlist
-            </button>
-          </form>
-          <label class="consent" for="consent-footer">
-            <input id="consent-footer" type="checkbox" name="consent" required />
-            <span>
-              I agree to receive waitlist updates from cumula and to the
-              <a href="privacy.html">privacy policy</a>. Unsubscribe any time.
-            </span>
-          </label>
+          <div class="eo-form">
+            <script async src="https://eomail5.com/form/2ab09552-462c-11f1-b7c4-cf2f3be645a0.js" data-form="2ab09552-462c-11f1-b7c4-cf2f3be645a0"></script>
+          </div>
+          <p class="micro">
+            By joining, you agree to our <a href="privacy.html">privacy policy</a>. Unsubscribe any time.
+          </p>
         </div>
       </section>
     </main>
@@ -215,25 +182,5 @@
       </div>
     </footer>
 
-    <script>
-      // Lightweight client-side capture stub. Swap action="#" on the forms
-      // for a real endpoint (Formspree, ConvertKit, Mailchimp, your own API)
-      // and remove this handler — or keep it as a fallback success message.
-      document.querySelectorAll('form.capture').forEach((form) => {
-        form.addEventListener('submit', (e) => {
-          if (form.getAttribute('action') === '#') {
-            e.preventDefault();
-            const input = form.querySelector('input[type=email]');
-            const button = form.querySelector('button');
-            if (input && button) {
-              button.textContent = 'Thanks — you’re on the list';
-              button.disabled = true;
-              input.value = '';
-              input.disabled = true;
-            }
-          }
-        });
-      });
-    </script>
   </body>
 </html>

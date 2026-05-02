@@ -243,6 +243,17 @@ body {
   white-space: nowrap;
 }
 
+.eo-form {
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+  min-height: 88px;
+}
+
+.eo-form a {
+  color: var(--primary);
+}
+
 .consent {
   display: flex;
   gap: 8px;
