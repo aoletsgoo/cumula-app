@@ -1,6 +1,6 @@
 # cumula
 
-Knowledge, compounded.
+Knowledge, accumulated.
 
 cumula tests what you already know, then builds a personal curriculum around the gaps. Modular. Measurable. Yours.
 
