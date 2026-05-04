@@ -311,6 +311,14 @@ body {
   padding: 48px 0 96px;
 }
 
+.preview__caption {
+  max-width: 880px;
+  margin: 0 auto 14px;
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+}
+
 .window {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -580,6 +588,48 @@ body {
 .footer__tagline {
   font-size: 13px;
   color: var(--muted);
+}
+
+.footer__legal {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.footer__legal a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer__legal a:hover {
+  color: var(--primary);
+}
+
+.footer__social {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 14px;
+  color: var(--muted);
+}
+
+.footer__social a {
+  display: inline-flex;
+  color: var(--muted);
+  transition: color 120ms ease;
+}
+
+.footer__social a:hover {
+  color: var(--primary);
+}
+
+.footer__social svg {
+  display: block;
+  width: 18px;
+  height: 18px;
 }
 
 /* Legal pages (privacy policy, terms) */
